@@ -7,5 +7,10 @@
 /* Colors */
 
 :root {
-  --facebook: hsl(208, 92%, 53%);
+  --dark-cyan: hsl(180, 29%, 50%);
+  --light-grayish-cyan-bg: hsl(180, 52%, 96%);
+}
+
+html {
+  font-size: 62.5%;
 }

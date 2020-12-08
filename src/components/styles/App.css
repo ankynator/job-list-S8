@@ -1,5 +1,13 @@
 .Header {
   width: 100%;
-  height: 50px;
-  border: 2px solid var(--facebook);
+  height: 200px;
+  /* border: solid 1px red; */
+  background: url('../../images/bg-header-mobile.svg'), var(--dark-cyan);
+  background-size: 116%;
+}
+
+.Main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--light-grayish-cyan-bg);
 }

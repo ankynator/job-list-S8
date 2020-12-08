@@ -1,8 +1,32 @@
 import React from 'react'
 
+import ListCards from './ListCards'
+
 import './styles/App.css'
 
 class App extends React.Component {
+
+  state = {
+    data: []
+  }
+
+  componentDidMount() {
+    this.fetchData()
+  }
+
+  fetchData = async () => {
+
+    try {
+      const response = await fetch('data.json')
+      const data = await response.json()
+      console.log(data)
+      this.setState({ data: data })
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -12,9 +36,7 @@ class App extends React.Component {
             <div className="Filter__attributes"></div>
           </div>
           <div className="Cards__container">
-            <ul className="Cards">
-
-            </ul>
+            <ListCards cards={this.state.data} />
           </div>
         </main>
       </React.Fragment>
