@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+
+:root {
+  --facebook: hsl(208, 92%, 53%);
+}
