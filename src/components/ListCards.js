@@ -2,12 +2,14 @@ import React from 'react'
 
 import Card from './Card'
 
+import './styles/ListCards.css'
+
 function ListCards(props) {
 
   const cards = props.cards
 
   return (
-    <ul>
+    <ul className="ListCard">
       {cards.map((card) => {
         return (
           <li key={card.id}>

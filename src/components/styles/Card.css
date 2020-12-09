@@ -1,0 +1,9 @@
+.Card {
+  width: inherit;
+  height: 25rem;
+  border-left: solid 5px var(--dark-cyan);
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 3rem 1rem 1rem 2rem;
+  margin-bottom: 2rem;
+}
