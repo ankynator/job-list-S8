@@ -1,0 +1,14 @@
+.CardFilter__container {
+  width: 100%;
+  background-color: var(--light-grayish-cyan-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.CardFilter{
+  width: calc(100% - 6rem);
+  min-height: 6rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: -3rem;
+}

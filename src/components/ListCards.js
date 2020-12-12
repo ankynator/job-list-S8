@@ -13,11 +13,10 @@ function ListCards(props) {
       {cards.map((card) => {
         return (
           <li key={card.id}>
-            <Card card={card} />
+            <Card card={card} onAddFilter={props.addFilter} />
           </li>
         )
       })
-
       }
     </ul>
   )

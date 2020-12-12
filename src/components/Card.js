@@ -14,13 +14,15 @@ function Card(props) {
         {card.featured && <p>Featured</p>}
       </div>
       <h1 className="Card__position">{card.position}</h1>
-      <div className="Card__tags">
-        {card.languages && card.languages.map((language) => {
+      <ul className="Card__tags">
+        {card.languages && card.languages.map((language, index) => {
           return (
-            <button>{language}</button>
+            <li key={index}>
+              <button id={language} onClick={props.onAddFilter}>{language}</button>
+            </li>
           )
         })}
-      </div>
+      </ul>
 
     </div>
   )
