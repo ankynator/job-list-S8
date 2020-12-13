@@ -15,10 +15,27 @@ function Card(props) {
       </div>
       <h1 className="Card__position">{card.position}</h1>
       <ul className="Card__tags">
+        {/* languages */}
         {card.languages && card.languages.map((language, index) => {
           return (
             <li key={index}>
               <button id={language} onClick={props.onAddFilter}>{language}</button>
+            </li>
+          )
+        })}
+        {/* level */}
+        <li>
+          <button id={card.level} onClick={props.onAddFilter}>{card.level}</button>
+        </li>
+        {/* role */}
+        <li>
+          <button id={card.role} onClick={props.onAddFilter}>{card.role}</button>
+        </li>
+        {/* tools */}
+        {card.tools && card.tools.map((tool, index) => {
+          return (
+            <li key={index}>
+              <button id={tool} onClick={props.onAddFilter}>{tool}</button>
             </li>
           )
         })}

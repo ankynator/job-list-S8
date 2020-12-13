@@ -21,7 +21,7 @@ class App extends React.Component {
     try {
       const response = await fetch('data.json')
       const data = await response.json()
-      // console.log(data)
+
       this.setState({ data: data })
     } catch (error) {
       console.log(error)
@@ -78,6 +78,7 @@ class App extends React.Component {
             <ListCards
               cards={this.state.data}
               addFilter={this.addFilters}
+              filters={this.state.filters}
             />
           </div>
         </main>
