@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles/Filter.css'
+
 function Filter(props) {
 
   return (
@@ -7,7 +9,7 @@ function Filter(props) {
       <div>
         {props.language}
       </div>
-      <button onClick={props.onRemoveFilter} id={props.language}>X</button>
+      <button onClick={props.onRemoveFilter} id={props.language}></button>
     </div>
     // <button onClick={props.onRemoveFilter} id={props.language}>{props.language}</button>
   )

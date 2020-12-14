@@ -11,4 +11,19 @@
   background-color: #ffffff;
   border-radius: 5px;
   margin-top: -3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.CardFilter > ul {
+  list-style: none;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.CardFilter__clear {
+  width: 20%;
+  background-color: var(--light-grayish-cyan-filter);
 }

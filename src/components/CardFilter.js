@@ -21,6 +21,7 @@ class CardFilter extends React.Component {
 
             }
           </ul>
+          <button className="CardFilter__clear">Clear</button>
         </div>
       </div>
     )

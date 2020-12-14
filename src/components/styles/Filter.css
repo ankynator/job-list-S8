@@ -1,0 +1,31 @@
+.Filter {
+  background-color: var(--light-grayish-cyan-filter);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 1rem ;
+  color: var(--dark-cyan);
+}
+
+.Filter > button {
+  
+  background: url('../../images/icon-remove.svg'), var(--dark-cyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.Filter > button:focus {
+  outline: none;
+}
