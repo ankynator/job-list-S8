@@ -7,13 +7,20 @@ function Card(props) {
 
   return (
     <div className="Card">
-      <img src={card.logo} alt="Logo company" />
-      <div className="Card__company&featured">
+      <img className="Card__image" src={card.logo} alt="Logo company" />
+      <div className="Card__companyAndfeatured">
         <h2>{card.company}</h2>
-        {card.new && <p>New!</p>}
-        {card.featured && <p>Featured</p>}
+        {card.new && <div>New!</div>}
+        {card.featured && <div>Featured</div>}
       </div>
-      <h1 className="Card__position">{card.position}</h1>
+      <h2 className="Card__title">{card.position}</h2>
+      <div className="Card__time">
+        <p>{card.postedAt}</p>
+        <div className="Card__time-dot"></div>
+        <p>{card.contract}</p>
+        <div className="Card__time-dot"></div>
+        <p>{card.location}</p>
+      </div>
       <ul className="Card__tags">
         {/* languages */}
         {card.languages && card.languages.map((language, index) => {

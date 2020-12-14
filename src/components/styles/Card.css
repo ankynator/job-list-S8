@@ -1,9 +1,102 @@
 .Card {
   width: inherit;
-  height: 25rem;
+  height: 30rem;
   border-left: solid 5px var(--dark-cyan);
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 3rem 1rem 1rem 2rem;
-  margin-bottom: 2rem;
+  padding: 3rem 2rem 1rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
+
+.Card__image {
+  width: 55px;
+  margin-top: -55px;
+}
+
+.Card__companyAndfeatured {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.Card__companyAndfeatured > h2{
+  font-weight: 700;
+  color: var(--dark-cyan);
+  margin-right: 2rem;
+}
+
+.Card__companyAndfeatured > div {
+  background-color: var(--dark-cyan);
+  margin-right: 1rem;
+  padding: 0 1rem 0 1rem;
+  height: 3rem;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.Card__companyAndfeatured > div:last-child {
+  background-color: var(--very-dark-grayish-cyan);
+}
+
+.Card__title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.Card__time {
+  margin-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--dark-grayish-cyan);
+  border-bottom: 1px solid var(--dark-grayish-cyan);
+}
+
+.Card__time > p {
+  margin-right: 1rem;
+}
+
+.Card__time-dot{
+  margin-right: 1rem;
+  height: 5px;
+  width: 5px;
+  background-color: var(--dark-grayish-cyan);
+  border-radius: 50%;
+}
+
+.Card__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Card__tags > li > button {
+  background-color: var(--light-grayish-cyan-filter);
+  margin: 1rem;
+  padding: 0.8rem;
+  height: 3.5rem;
+  border: none;
+  color: var(--dark-cyan) ;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+.Card__tags > li > button:focus {
+  outline: none;
+}
+
+
