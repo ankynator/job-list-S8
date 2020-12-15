@@ -62,6 +62,13 @@ class App extends React.Component {
     }
   }
 
+  clearFilters = (e) => {
+    this.setState({
+      emptyFilters: true,
+      filters: []
+    })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -70,6 +77,7 @@ class App extends React.Component {
           <CardFilter
             filters={this.state.filters}
             removeFilter={this.removeFilter}
+            clearFilters={this.clearFilters}
           />
         }
 

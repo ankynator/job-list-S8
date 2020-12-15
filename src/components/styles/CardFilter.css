@@ -26,4 +26,15 @@
 .CardFilter__clear {
   width: 20%;
   background-color: var(--light-grayish-cyan-filter);
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark-grayish-cyan);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.CardFilter__clear:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

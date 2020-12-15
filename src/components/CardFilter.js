@@ -21,7 +21,7 @@ class CardFilter extends React.Component {
 
             }
           </ul>
-          <button className="CardFilter__clear">Clear</button>
+          <button className="CardFilter__clear" onClick={this.props.clearFilters}>Clear</button>
         </div>
       </div>
     )
